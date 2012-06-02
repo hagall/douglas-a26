@@ -1,0 +1,9 @@
+OS: Linux only.
+
+Douglas A-26 'Invader'.
+The damn program that overloads your victim with Skype calls, snowing him/her up to the eyes. The basic principle is simple: "A-26" calls the victim, wait for ring tones, then hangs up and repeats, again and again. Because we hang up before the victim gets to a phone, no money will be charged off from your account. The whole process is absolutely free. And you can play around with "hang-after" option and specify time delay before hangup. Hey, and don't forget to turn your microphone off!
+
+Build dependencies: boost, GLib and DBus. 
+Debian: apt-get install build-essentials libboost-all-dev libglib2.0-dev libdbus-glib-1-dev
+Then launch make.sh.
+
