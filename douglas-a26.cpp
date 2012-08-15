@@ -427,7 +427,7 @@ int main(int argc, char **argv)
 		
 								// Obtaining user status 
 	ret = skype_send_message("GET CURRENTUSERHANDLE");
-	boost::regex username_m("CURRENTUSERHANDLE ([a-zA-Z0-9]+)");
+	boost::regex username_m("CURRENTUSERHANDLE ([a-zA-Z0-9\-\_]+)");
 	boost::cmatch rmatch;
 	boost::regex_search(ret, rmatch, username_m);
 	std::cout << "Login  | " << rmatch[1] << std::endl;
